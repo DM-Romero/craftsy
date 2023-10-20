@@ -1,0 +1,28 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* border-box: ocupa espacio para adentro de la caja. Si no aplicamos esto se expande hacia afuera*/
+
+}
+
+ul, ol{
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    font-family: 'lato';
+    max-width: 400px;
+    margin: 0 auto; /*Hace referencia a los margenes de los costados, dejó todo en el medio */
+    background-image: url('/img/bg-2.png'); /*se está repitiendo la imagen muchas veces*/
+
+
+}
