@@ -6,9 +6,7 @@
 
 }
 
-ul, ol{
-    padding: 0;
-}
+
 li {
     list-style: none;
 }
@@ -20,7 +18,7 @@ a{
 
 body {
     font-family: 'lato';
-    max-width: 400px;
+    max-width: 1140px;
     margin: 0 auto; /*Hace referencia a los margenes de los costados, dejó todo en el medio */
     background-image: url('/img/bg-2.png'); /*se está repitiendo la imagen muchas veces*/
 

@@ -1,12 +1,13 @@
 .home__main__section{
     width: 100%;
-
+    padding: 20px;
 }
 
 .home__main__section__article{
     width: 100%;
     background-color: #fff;
     padding: 20px;
+
 }
 
 .home__main__section__article img{
@@ -20,7 +21,7 @@
 }
 
 .home__main__section__article p{
-    line-height: 1.2rem;
+    line-height: 1.3rem;
 }
 
 /*aside tutoriales*/
@@ -40,7 +41,7 @@
 
 }
 
-.home__main__aside__section{
+.home__main__aside__section--tutoriales{
     margin-bottom: 20px;
 }
 
@@ -49,18 +50,55 @@
     border: 1px solid silver;
     border-bottom: none;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px; /*gap separa los elementos hijos entre ellos, nos evita usar margin y padding*/
 }
+
+
+
 
 .home__main__aside__section__article:last-child{
     border-bottom: 1px solid silver;
 }
 
+
 .home__main__aside__section--publicidad{
     padding: 10px;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .home__main__aside__section--publicidad img{
     width: 100%;
-    margin-bottom: 20px;
+    
+}
+
+
+@media (min-width: 768px){
+    .home__main__section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .home__main__section__article{
+        width: 50%;
+        
+    }
+
+    .home__main__aside__section--tutoriales{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 14px;
+
+    }
+    
+    .home__main__aside__section__article{
+        width: 47%;
+        border-bottom: 1px solid silver;
+    }
 }
