@@ -22,14 +22,14 @@
                 <li><a href="">computadoras</a></li>
             </ul>
             <ul>
-                <li><a href="/login">login</a></li>
-                <li><a href="/register">registro</a></li>
+                <li><a href="/auth/login">login</a></li>
+                <li><a href="/users/register">registro</a></li>
             </ul>
         </nav>
     </header>
     <main class="register__main">
-      <section class="box__card">
-        <div class="box__card--title">
+        <section class="box__card box__card--simple">
+            <div class="box__card--title">
             <h3>Registro</h3>
             <hr>
         </div>
@@ -42,6 +42,7 @@
             <div class="form__box">
                 <label class="form__label" for="surname">Apellido</label>
                 <input class="form__input" id="surname" type="text" placeholder="Escribí tu apellido" name="surname">
+                <small class="form__msg-error">El apellido es obligatorio</small>
             </div>
             <div class="form__box">
                 <label class="form__label" for="email">Email</label>
